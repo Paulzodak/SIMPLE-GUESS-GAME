@@ -7,15 +7,34 @@
     <title>Document</title>
   </head>
   <body>
-    <input id="user_input" />
+    <input type="number" class="user_input" />
     <p id="demo"></p>
-    <button onclick="getUserInput()">SUBMIT</button>
+    <button id="submit_btn" onclick="getUserInput()">SUBMIT</button>
     <script>
-      //   let user_inputt = document.getElementById("user_input").value;
       const getUserInput = () => {
-        let user_inputt = document.getElementById("user_input").value;
-        console.log(user_inputt);
+        const userInput = document.querySelector(".user_input").value;
+        console.log("userInput");
       };
+      // document
+      //   .querySelector("#submit_btn")
+      //   .addEventListener("click", getUserInput());
+
+      //   let user_inputt = document.getElementById("user_input").value;
+      // let random = Math.round(Math.random() * 5);
+      // const getUserInput = () => {
+      //   let userInput = document.querySelector(".user_input").value;
+      //   if (userInput <= 10) {
+      //     //  CONVERT USER DATA TO NUMBER TO AVOID BUGS
+      //     let userInputNumber = Number(userInput);
+      //     // CREATING A RANDOM NUMBER
+
+      //     if (userInputNumber === random) {
+      //       console.log("yayaay!!");
+      //     } else {
+      //       console.log(userInputNumber === random);
+      //     }
+      //   } else window.alert(`ENTER A VALID NUMBER`);
+      // };
     </script>
   </body>
 </html>

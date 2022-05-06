@@ -1,5 +1,8 @@
 @import "color.scss";
 @import "fonts.scss";
+* {
+  font-family: $mainfont;
+}
 body {
   margin: 0px;
   background-color: $bgcolor;
@@ -44,21 +47,80 @@ body {
     // background-color: rgb(112, 113, 27);
     margin-top: 5%;
     .answer_container {
-      font-size: 10rem;
+      font-size: 8rem;
       text-align: center;
       margin: 0px auto;
       background-color: white;
       height: 100%;
-      width: 30%;
+      width: 20%;
+      padding: 0;
     }
   }
   .box4 {
-    background-color: rgb(202, 23, 215);
+    // background-color: rgb(202, 23, 215);
   }
   .box5 {
-    background-color: rgb(247, 235, 18);
+    // background-color: rgb(247, 235, 18);
+    display: flex;
+    justify-content: space-evenly;
+    .box1 {
+      //   background-color: aliceblue;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      input {
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0);
+        height: 100%;
+        color: $maincolor;
+        height: 70%;
+      }
+      .userInput {
+        max-width: 150px;
+        max-height: 150px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        font-size: 60px;
+        text-align: center;
+      }
+    }
+    .box2 {
+      //   background-color: aquamarine;
+      width: 50%;
+      div {
+        h1 {
+          color: $maincolor;
+          margin: 20px 10px;
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
   }
   .box6 {
-    background-color: rgb(39, 187, 52);
+    // background-color: rgb(39, 187, 52);
+    display: flex;
+    justify-content: space-evenly;
+    .box1 {
+      width: 50%;
+      button {
+        width: 40%;
+        height: 40%;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        border: 0px;
+      }
+    }
+    .box2 {
+      width: 50%;
+      margin: auto;
+      h1 {
+        text-align: center;
+        font-size: 1.2em;
+        color: $maincolor;
+      }
+    }
   }
 }

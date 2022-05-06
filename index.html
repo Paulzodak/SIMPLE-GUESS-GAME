@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GUESS MY NUMBER GAME TRIAL!</title>
+    <script
+      src="https://kit.fontawesome.com/ed657a2751.js"
+      crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -18,8 +21,9 @@
           <div class="again">Try Again!!!</div>
         </div>
         <div></div>
-        <div class="instruction">(Input a number Between 1 and 20)</div>
+        <div class="instruction">(Input a number Between 1 and 10)</div>
       </div>
+
       <div class="box2">
         <div class="guess">Guess My Number!</div>
       </div>
@@ -27,9 +31,32 @@
         <div class="answer_container">?</div>
       </div>
       <div class="box4"></div>
-      <div class="box5"></div>
-      <div class="box6"></div>
+
+      <div class="box5">
+        <div class="box1">
+          <input type="number" placeholder="1-10" class="userInput" />
+        </div>
+        <div class="box2">
+          <div>
+            <i class="fa-solid fa-arrow-right"></i>
+            <h1 class="hinter">Too low!</h1>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box6">
+        <div class="box1">
+          <button onclick="getUserInput()">Check!</button>
+        </div>
+        <div class="box2">
+          <div>
+            <h1 class ="score">Score : 19</h1>
+            <h1 class="Highscore">Highscore : 0</h1>
+          </div>
+      </div>
       <div class="box7"></div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
