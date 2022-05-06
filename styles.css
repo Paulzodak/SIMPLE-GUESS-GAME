@@ -33,6 +33,12 @@ body {
   margin: 10px;
   padding: 15px 30px;
   border-radius: 10px;
+  -webkit-animation-name: none;
+          animation-name: none;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
   font-size: 1.2em;
 }
 
@@ -67,6 +73,14 @@ body {
   height: 100%;
   width: 20%;
   padding: 0;
+  -webkit-animation-name: answer_container_animation;
+          animation-name: answer_container_animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .grid_container .box5 {
@@ -148,5 +162,65 @@ body {
   text-align: center;
   font-size: 1.2em;
   color: white;
+}
+
+@-webkit-keyframes answer_container_animation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #484848;
+  }
+  from {
+    color: #484848;
+  }
+  to {
+    color: #979797;
+  }
+}
+
+@keyframes answer_container_animation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #484848;
+  }
+  from {
+    color: #484848;
+  }
+  to {
+    color: #979797;
+  }
+}
+
+@-webkit-keyframes again_animation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #484848;
+  }
+  from {
+    color: #484848;
+  }
+  to {
+    color: #979797;
+  }
+}
+
+@keyframes again_animation {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #484848;
+  }
+  from {
+    color: #484848;
+  }
+  to {
+    color: #979797;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

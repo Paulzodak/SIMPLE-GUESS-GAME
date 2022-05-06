@@ -11,10 +11,19 @@
     <p id="demo"></p>
     <button id="submit_btn" onclick="getUserInput()">SUBMIT</button>
     <script>
-      const getUserInput = () => {
-        const userInput = document.querySelector(".user_input").value;
-        console.log("userInput");
-      };
+      let counter = 10;
+      function counterDecreaser(counter) {
+        return (counter = counter - 1);
+      }
+      counterDecreaser();
+      console.log(counterDecreaser(10));
+      // const getUserInput = () => {
+      //   let counter = 10;
+      //   const userInput = document.querySelector(".user_input").value;
+      //   console.log("userInput");
+      //   console.log(counter);
+      //   console.log(counterDecreaser(counter));
+      // };
       // document
       //   .querySelector("#submit_btn")
       //   .addEventListener("click", getUserInput());

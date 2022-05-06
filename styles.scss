@@ -24,6 +24,9 @@ body {
       margin: 10px;
       padding: 15px 30px;
       border-radius: 10px;
+      animation-name: none;
+      animation-duration: 0.2s;
+      animation-iteration-count: 3;
       font-size: 1.2em;
     }
     .instruction {
@@ -50,15 +53,19 @@ body {
       font-size: 8rem;
       text-align: center;
       margin: 0px auto;
-      background-color: white;
+      background-color: $maincolor;
       height: 100%;
       width: 20%;
       padding: 0;
+      animation-name: answer_container_animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
     }
   }
-  .box4 {
-    // background-color: rgb(202, 23, 215);
-  }
+  // .box4 {
+  //   // background-color: rgb(202, 23, 215);
+  // }
   .box5 {
     // background-color: rgb(247, 235, 18);
     display: flex;
@@ -122,5 +129,33 @@ body {
         color: $maincolor;
       }
     }
+  }
+}
+@keyframes answer_container_animation {
+  from {
+    background-color: $maincolor;
+  }
+  to {
+    background-color: rgb(72, 72, 72);
+  }
+  from {
+    color: rgb(72, 72, 72);
+  }
+  to {
+    color: rgb(151, 151, 151);
+  }
+}
+@keyframes again_animation {
+  from {
+    background-color: $maincolor;
+  }
+  to {
+    background-color: rgb(72, 72, 72);
+  }
+  from {
+    color: rgb(72, 72, 72);
+  }
+  to {
+    color: rgb(151, 151, 151);
   }
 }
