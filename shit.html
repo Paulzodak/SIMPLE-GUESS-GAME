@@ -12,11 +12,14 @@
     <button id="submit_btn" onclick="getUserInput()">SUBMIT</button>
     <script>
       let counter = 10;
-      function counterDecreaser(counter) {
-        return (counter = counter - 1);
-      }
-      counterDecreaser();
-      console.log(counterDecreaser(10));
+      let decreaser = (arg) => {
+        return arg--;
+      };
+      console.log(counter);
+      counter--;
+      console.log(counter);
+      console.log(decreaser(5), decreaser(5));
+      console.log(decreaser(5));
       // const getUserInput = () => {
       //   let counter = 10;
       //   const userInput = document.querySelector(".user_input").value;
