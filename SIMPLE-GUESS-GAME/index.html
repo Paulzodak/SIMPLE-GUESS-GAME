@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUESS MY NUMBER GAME TRIAL!</title>
+    <script
+      src="https://kit.fontawesome.com/ed657a2751.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="httpss://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid_container">
+      <div class="box1">
+        <div>
+          <div class="again">Try Again!!!</div>
+        </div>
+        <div></div>
+        <div class="instruction">(Input a number Between 1 and 10)</div>
+      </div>
+
+      <div class="box2">
+        <div class="guess">Guess My Number!</div>
+      </div>
+      <div class="box3">
+        <div class="answer_container">?</div>
+      </div>
+      <div class="box4"></div>
+
+      <!-- BOX 5 -->
+      <div class="box5">
+
+                <!-- BOX 1 -->
+        <div class="box1">
+          <input type="number" placeholder="1-10" class="userInput" />
+        </div>
+
+                <!-- BOX 2 -->
+        <div class="box2"></div>
+
+                <!-- BOX 3 -->
+        <div class="hinter_container">
+            <!-- <i class="fa-solid fa-arrow-right"></i> -->
+            <h1 class="hinter"></h1>
+        </div>
+      </div>
+
+
+      <div class="box6">
+        <div class="check">
+          <button class="check_btn" onclick="getUserInput()" onmouseover="hover()">Check!</button>
+        </div>
+        <div class="reset">
+          <button onclick="reset()">RESET!</button>
+        </div>
+        <div class="score_container">
+          <div>
+            <h1 class ="score">kjhgfds</h1>
+            <h1 class="Highscore"></h1>
+          </div>
+      </div>
+      <div class="box7"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

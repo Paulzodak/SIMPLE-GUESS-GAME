@@ -1,0 +1,203 @@
+@import "color.scss";
+@import "fonts.scss";
+* {
+  font-family: $mainfont;
+}
+body {
+  margin: 0px;
+  background-color: $bgcolor;
+}
+.grid_container {
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 10% 10% 30% 10% 15% 15% 10%;
+  height: 100vh;
+  width: 100vw;
+  .box1 {
+    // background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    .again {
+      background-color: $maincolor;
+      width: 100%;
+      max-height: 50%;
+      color: $bgcolor;
+      margin: 10px;
+      padding: 10% 0%;
+      text-align: center;
+      border-radius: 10px;
+      animation-name: none;
+      animation-duration: 0.2s;
+      animation-iteration-count: 3;
+      font-size: 0.8em;
+    }
+    .instruction {
+      color: $maincolor;
+      margin: 10px;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 0.8em;
+    }
+  }
+  .box2 {
+    // background-color: rgb(25, 73, 116);
+    .guess {
+      font-size: 1.5em;
+      animation-name: none;
+      animation-duration: 0.2s;
+      animation-iteration-count: 3;
+      color: $maincolor;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .box3 {
+    // background-color: rgb(112, 113, 27);
+    margin-top: 5%;
+    .answer_container {
+      font-size: 4em;
+      max-width: 20%;
+      max-height: 50%;
+      text-align: center;
+      margin: auto;
+      background-color: $maincolor;
+      height: 100%;
+      width: 20%;
+      padding: 50px;
+      animation-name: answer_container_animation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  }
+  // .box4 {
+  //   // background-color: rgb(202, 23, 215);
+  // }
+  .box5 {
+    // background-color: rgb(247, 235, 18);
+    display: flex;
+    justify-content: space-evenly;
+    .box1 {
+      //   background-color: aliceblue;
+      width: 33.3%;
+      display: flex;
+      justify-content: center;
+      input {
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0);
+        height: 100%;
+        color: $maincolor;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .userInput {
+        max-width: 150px;
+        max-height: 150px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+      }
+    }
+    .box2 {
+      width: 33.3%;
+    }
+    .hinter_container {
+      width: 33.3%;
+      margin: auto;
+      .hinter {
+        color: $maincolor;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        vertical-align: text-top;
+      }
+    }
+  }
+  .box6 {
+    display: flex;
+    justify-content: space-evenly;
+    .check {
+      width: 33.3%;
+      display: grid;
+      button {
+        width: 40%;
+        height: 40%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        border-radius: 5px;
+        border: 0px;
+      }
+    }
+    .reset {
+      width: 33.3%;
+      display: grid;
+      button {
+        width: 40%;
+        height: 40%;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        border: 0px;
+      }
+    }
+    .score_container {
+      width: 33.3%;
+      margin: auto;
+      h1 {
+        text-align: center;
+        font-size: 1.2em;
+        color: $maincolor;
+      }
+    }
+  }
+}
+
+//  ANIMATIONS
+@keyframes answer_container_animation {
+  from {
+    background-color: $maincolor;
+  }
+  to {
+    background-color: rgb(72, 72, 72);
+  }
+  from {
+    color: rgb(72, 72, 72);
+  }
+  to {
+    color: rgb(151, 151, 151);
+  }
+}
+@keyframes blink_animation {
+  from {
+    background-color: $maincolor;
+  }
+  to {
+    background-color: rgb(72, 72, 72);
+  }
+  from {
+    color: rgb(72, 72, 72);
+  }
+  to {
+    color: rgb(151, 151, 151);
+  }
+}
+.check {
+  color: greenyellow;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: green;
+  }
+  .Highscore {
+    font-size: 0.6em;
+    background-color: blue;
+  }
+  .score {
+    color: red;
+  }
+}
